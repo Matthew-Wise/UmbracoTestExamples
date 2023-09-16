@@ -1,0 +1,15 @@
+﻿
+<html lang="en">
+<head>
+    <title>Search</title>
+</head>
+<body>
+<main>
+    <section>
+        <h1>Showing 0 Results for ""</h1>
+        <ul>
+        </ul>
+    </section>
+</main>
+</body>
+</html>

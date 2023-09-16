@@ -1,0 +1,33 @@
+{
+  "$schema": "appsettings-schema.json",
+  "Serilog": {
+    "MinimumLevel": {
+      "Default": "Warning",
+      "Override": {
+        "Umbraco.Cms.Infrastructure.Install": "Warning"
+      }
+    }
+  },
+  "Umbraco": {
+    "CMS": {
+      "Unattended": {
+        "UpgradeUnattended": true,
+        "InstallUnattended": true,
+        "UnattendedUserName": "Test",
+        "UnattendedUserEmail": "test@test.com",
+        "UnattendedUserPassword": "1234567890"
+      },
+      "Hosting": {
+        "Debug": true
+      },
+      "ModelsBuilder": {
+        "ModelsMode": "Nothing"
+      }
+    }
+  },
+  "uSync": {
+    "Settings": {
+      "ImportOnFirstBoot": true
+    }
+  }
+}

@@ -1,0 +1,25 @@
+﻿@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<TestingExamples.Web.Features.Search.Models.SearchPageViewModel>
+@{
+    Layout = null;
+}
+
+<html lang="en">
+<head>
+    <title>@Model.Content.Name</title>
+</head>
+<body>
+<main>
+    <section>
+        <h1>Showing @Model.SearchResponse.TotalItemCount Results for "@Model.SearchResponse.SearchTerm"</h1>
+        <ul>
+            @foreach (var result in Model.SearchResponse.Items.WhereNotNull())
+            {
+                <li>
+                    <a href="@result.Url()">@result.Name</a>
+                </li>
+            }
+        </ul>
+    </section>
+</main>
+</body>
+</html>
